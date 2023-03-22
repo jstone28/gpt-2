@@ -1,10 +1,17 @@
-FROM tensorflow/tensorflow:1.12.0-py3
+FROM tensorflow/tensorflow:1.13.2-py3
+
+WORKDIR /gpt-2
 
 ENV LANG=C.UTF-8
+ENV PYTHONIOENCODING=UTF-8
+
 RUN mkdir /gpt-2
-WORKDIR /gpt-2
+
 ADD . /gpt-2
+
 RUN pip3 install -r requirements.txt
+
+## download the models
 RUN python3 download_model.py 124M
 RUN python3 download_model.py 355M
 RUN python3 download_model.py 774M

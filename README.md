@@ -25,6 +25,7 @@ For basic information, see our [model card](./model_card.md).
 ### Work with us
 
 Please [let us know](mailto:languagequestions@openai.com) if you’re doing interesting research with or working on applications of GPT-2!  We’re especially interested in hearing from and potentially working with those who are studying
+
 - Potential malicious use cases and defenses against them (e.g. the detectability of synthetic text)
 - The extent of problematic content (e.g. bias) being baked into the models and effective mitigations
 
@@ -39,7 +40,8 @@ See [CONTRIBUTORS.md](./CONTRIBUTORS.md)
 ## Citation
 
 Please use the following bibtex entry:
-```
+
+```text
 @article{radford2019language,
   title={Language Models are Unsupervised Multitask Learners},
   author={Radford, Alec and Wu, Jeff and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya},
